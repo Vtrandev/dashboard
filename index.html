@@ -1,57 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="landing__page">
-        <div class="navigation">
-            <div class="logo">
-                Dashboard
+      <div class="navigation">
+        <div class="logo">
+          <img
+            class="icon icon__home"
+            src="./assets/dashboard.svg"
+            alt=""
+          />Dashboard
+        </div>
+        <div class="nav__home">
+          <ul>
+            <li>
+              <img class="icon icon__home" src="./assets/home.svg" alt="" />Home
+            </li>
+            <li>
+              <img
+                class="icon icon__home"
+                src="./assets/profile.svg"
+                alt=""
+              />Profile
+            </li>
+            <li>
+              <img
+                class="icon icon__home"
+                src="./assets/message.svg"
+                alt=""
+              />Messages
+            </li>
+            <li>
+              <img
+                class="icon icon__home"
+                src="./assets/history.svg"
+                alt=""
+              />History
+            </li>
+            <li>
+              <img
+                class="icon icon__home"
+                src="./assets/task.svg"
+                alt=""
+              />Tasks
+            </li>
+            <li>
+              <img
+                class="icon icon__home"
+                src="./assets/community.svg"
+                alt=""
+              />Communities
+            </li>
+          </ul>
+        </div>
+        <div class="nav__settings">
+          <ul>
+            <li>
+              <img
+                class="icon icon__home"
+                src="./assets/setting.svg"
+                alt=""
+              />Settings
+            </li>
+            <li>
+              <img
+                class="icon icon__home"
+                src="./assets/question.svg"
+                alt=""
+              />Support
+            </li>
+            <li>
+              <img
+                class="icon icon__home"
+                src="./assets/privacy.svg"
+                alt=""
+              />Privacy
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="dashboard">
+        <div class="dashboard__search-panel">
+          <div class="searchbar">
+            <img class="icon icon__black" src="./assets/magnify.svg" alt="" />
+            <input type="text" />
+          </div>
+          <div class="account">
+            <img class="icon icon__black" src="./assets/bell-ring.svg" alt="" />
+            <img class="icon icon__black" src="./assets/face-man.svg" alt="" />
+            <h3>Morgan Oakley</h3>
+          </div>
+
+          <div class="greeting">
+            <img
+              class="icon icon__black icon__logo"
+              src="./assets/face-man.svg"
+              alt=""
+            />
+            <div class="column">
+              <p>Hi there,</p>
+              <h2>Morgan Oakley</h2>
             </div>
-            <div class="nav__home">
-                <ul>
-                    <li>Home</li>
-                    <li>Profile</li>
-                    <li>Messages</li>
-                    <li>History</li>
-                    <li>Tasks</li>
-                    <li>Communities</li>
-                </ul>
-            </div>
-            <div class="nav__settings">
-                <ul>
-                    <li>Settings</li>
-                    <li>Support</li>
-                    <li>Privacy</li>
-                </ul>
-            </div>
+          </div>
+
+          <div class="actions">
+            <button class="btn__actions">New</button>
+            <button class="btn__actions">Upload</button>
+            <button class="btn__actions">Share</button>
+          </div>
         </div>
 
-        <div class="dashboard">
-            <div class="dashboard__search-panel">
-                Search
+        <div class="dashboard__projects">
+          <h2 class="dashboard__title-projects dashboard__subheading">
+            Your Projects
+          </h2>
+          <div class="super__cool column box">
+            <h4>Super Cool Projects</h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+              ut perferendis veniam, ipsum quod sapiente.
+            </p>
+            <div class="box__icon">
+              <img class="icon icon__black" src="./assets/star.svg" alt="" />
+              <img class="icon icon__black" src="./assets/eye.svg" alt="" />
+              <img class="icon icon__black" src="./assets/share.svg" alt="" />
             </div>
-            <div class="dashboard__projects">
-                <h2 class="dashboard__title-projects">Your Projects</h2>
-                <div class="super__cool">Super Cool</div>
-                <div class="less__cool">Less Cool</div>
+          </div>
+          <div class="less__cool column box">
+            <h4>Less Cool Projects</h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
+              sint nostrum ex possimus ab autem!
+            </p>
+            <div class="box__icon">
+              <img class="icon icon__black" src="./assets/star.svg" alt="" />
+              <img class="icon icon__black" src="./assets/eye.svg" alt="" />
+              <img class="icon icon__black" src="./assets/share.svg" alt="" />
+            </div>
+          </div>
 
-                <h2 class="dashboard__title-announcement">Announcements</h2>
-                <div class="impossible__app">Impossible App</div>
-                <div class="easy__app">Easy Peasy App</div>
-                <div class="ad__blocker">Ad Blocker</div>
-                <div class="money__maker">Money Maker</div>
-                <h2 class="dashboard__title-trending">Trending</h2>
+          <div class="impossible__app column box">
+            <h4>Impossible App</h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
+              sint nostrum ex possimus ab autem!
+            </p>
+            <div class="box__icon">
+              <img class="icon icon__black" src="./assets/star.svg" alt="" />
+              <img class="icon icon__black" src="./assets/eye.svg" alt="" />
+              <img class="icon icon__black" src="./assets/share.svg" alt="" />
             </div>
+          </div>
+          <div class="easy__app column box">
+            <h4>Easy Peasy App</h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
+              sint nostrum ex possimus ab autem!
+            </p>
+            <div class="box__icon">
+              <img class="icon icon__black" src="./assets/star.svg" alt="" />
+              <img class="icon icon__black" src="./assets/eye.svg" alt="" />
+              <img class="icon icon__black" src="./assets/share.svg" alt="" />
+            </div>
+          </div>
+          <div class="ad__blocker column box">
+            <p>Ad Blocker</p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
+              sint nostrum ex possimus ab autem!
+            </p>
+            <div class="box__icon">
+              <img class="icon icon__black" src="./assets/star.svg" alt="" />
+              <img class="icon icon__black" src="./assets/eye.svg" alt="" />
+              <img class="icon icon__black" src="./assets/share.svg" alt="" />
+            </div>
+          </div>
+          <div class="money__maker column box">
+            <p>Money Maker</p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
+              sint nostrum ex possimus ab autem!
+            </p>
+            <div class="box__icon">
+              <img class="icon icon__black" src="./assets/star.svg" alt="" />
+              <img class="icon icon__black" src="./assets/eye.svg" alt="" />
+              <img class="icon icon__black" src="./assets/share.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="dashboard__title-announcement">
+            <h2 class="dashboard__subheading">Announcements</h2>
+            <div class="column box">
+              <h4>Site Maintenance</h4>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo minima eaque ea!</p>
+              <h4>Community Share Day</h4>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo minima eaque ea!</p>
+            </div>
+          </div>
+
+          <div class="dashboard__title-trending">
+            <h2 class="dashboard__subheading">Trending</h2>
+            <div class="box">
+              <div class="flex trending__tag">
+                <img class="avatar" src="./assets/community.svg" alt="" />
+                <div>
+                  <p>@tegan</p>
+                  <p>World Peace Builder</p>
+                </div>
+              </div>
+              <div class="flex trending__tag">
+                <img class="avatar" src="./assets/community.svg" alt="" />
+                <div>
+                  <p>@morgan</p>
+                  <p>Super Cool Project</p>
+                </div>
+              </div>
+              <div class="flex trending__tag">
+                <img class="avatar" src="./assets/community.svg" alt="" />
+                <div>
+                  <p>@kendall</p>
+                  <p>Life Changing App</p>
+                </div>
+              </div>
+              <div class="flex trending__tag">
+                <img class="avatar" src="./assets/community.svg" alt="" />
+                <div>
+                  <p>@alex</p>
+                  <p>No Traffic Maker</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
